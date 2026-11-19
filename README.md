@@ -62,7 +62,7 @@ EcommerceAutomationFramework/
 
 ## Requirements
 
-1. Install a JDK (17 or newer) and verify:
+1. Install JDK 26 and verify:
 
    ```bash
    java -version
@@ -78,16 +78,30 @@ EcommerceAutomationFramework/
 3. Install Google Chrome (or Firefox).
 4. Ensure the computer has internet access on the first Maven dependency download and when Selenium Manager needs browser-driver metadata.
 
-## Open in IntelliJ IDEA on macOS (including Apple Silicon M1)
 
-1. Extract the ZIP file.
-2. Open IntelliJ IDEA.
-3. Select **File → Open**, then choose the extracted `EcommerceAutomationFramework` folder (the folder containing `pom.xml`).
-4. If prompted, choose **Open as Project** and trust the project.
-5. IntelliJ should detect `pom.xml`. Choose **Load Maven Project** / **Reload All Maven Projects**.
-6. Open **File → Project Structure → Project** and select your installed JDK 26. The Maven compiler release is set to 26.
-7. Wait for Maven to download dependencies.
-8. Open `testng.xml` and click the green Run icon, or use the Maven commands below.
+## Setup and Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Priyanshu7557/EcommerceAutomationFramework.git
+```
+
+### 2. Open in IntelliJ IDEA
+
+- Open IntelliJ IDEA.
+- Select File → Open.
+- Choose the cloned project folder.
+- Load the Maven project.
+- Configure JDK 26.
+
+### 3. Install dependencies
+
+Open the IntelliJ terminal and run:
+
+```bash
+mvn clean install
+```
 
 ### Run from IntelliJ terminal
 
