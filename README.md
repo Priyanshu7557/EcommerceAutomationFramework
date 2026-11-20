@@ -60,6 +60,20 @@ EcommerceAutomationFramework/
         └── resources/config.properties
 ```
 
+### Package Responsibilities
+
+- **base:** Contains the base test class responsible for common test initialization and cleanup.
+- **config:** Handles reading configuration properties.
+- **driver:** Manages WebDriver creation and browser initialization.
+- **listeners:** Contains TestNG listeners for monitoring test execution events.
+- **pages:** Contains Page Object Model classes representing different application pages.
+- **tests:** Contains test classes covering login, product selection, cart operations, and checkout workflows.
+- **resources:** Stores supporting test configuration and resource files.
+
+### Design Approach
+
+The framework follows the Page Object Model (POM) design pattern, separating test logic, page interactions, browser management, and configuration to improve code reusability, maintainability, and readability.
+
 ## Requirements
 
 1. Install JDK 26 and verify:
