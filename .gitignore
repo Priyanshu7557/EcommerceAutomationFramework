@@ -2,5 +2,4 @@ target/
 .idea/
 *.iml
 .DS_Store
-screenshots/
 test-output/
