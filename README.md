@@ -1,6 +1,6 @@
 # E-commerce End-to-End Automation Framework
 
-A portfolio-ready UI automation project using **Java, Selenium WebDriver, TestNG, Maven and Page Object Model (POM)**. The framework tests the public SauceDemo demo shop: https://www.saucedemo.com/
+A portfolio-ready UI automation project using **Java, Selenium WebDriver, TestNG, Maven and Page Object Model (POM)**. The framework tests the public SauceDemo demo shop: [https://www.saucedemo.com/](https://www.saucedemo.com/).
 
 > This is a learning/portfolio project against a public demo application. Do not use it for real purchases or against a site without permission.
 
@@ -21,7 +21,7 @@ A portfolio-ready UI automation project using **Java, Selenium WebDriver, TestNG
 
 ## Technology
 
-- Java 26 (the project is configured to compile for Java 26)
+- Java 26
 - Selenium 4.35.0
 - TestNG 7.11.0
 - Maven
@@ -38,9 +38,14 @@ EcommerceAutomationFramework/
 ├── testng.xml
 ├── Jenkinsfile
 ├── README.md
-└── src
-    └── test
-        ├── java/com/priyanshu/qa
+├── screenshots/
+│   ├── test-execution.png
+│   ├── saucedemo-inventory.png
+│   ├── project-structure.png
+│   └── testng-report.png
+└── src/
+    └── test/
+        ├── java/com/priyanshu/qa/
         │   ├── base/BaseTest.java
         │   ├── config/ConfigReader.java
         │   ├── driver/DriverFactory.java
@@ -57,12 +62,13 @@ EcommerceAutomationFramework/
         │       ├── LoginTests.java
         │       ├── ProductAndCartTests.java
         │       └── CheckoutTests.java
-        └── resources/config.properties
+        └── resources/
+            └── config.properties
 ```
 
 ## Requirements
 
-1. Install a JDK (17 or newer) and verify:
+1. Install JDK 26 and verify:
 
    ```bash
    java -version
@@ -75,7 +81,7 @@ EcommerceAutomationFramework/
    mvn -version
    ```
 
-3. Install Google Chrome (or Firefox).
+3. Install Google Chrome or Firefox.
 4. Ensure the computer has internet access on the first Maven dependency download and when Selenium Manager needs browser-driver metadata.
 
 ## Open in IntelliJ IDEA on macOS (including Apple Silicon M1)
@@ -182,3 +188,23 @@ git push -u origin main
 ```
 
 Replace `YOUR_USERNAME` with your GitHub username. Do not commit passwords, access tokens, or private test data.
+
+---
+
+## Project Screenshots
+
+### 1. Test Execution Result
+
+![Test Execution](screenshots/test-execution.png)
+
+### 2. Application Under Test
+
+![SauceDemo Inventory](screenshots/saucedemo-inventory.png)
+
+### 3. Project Structure
+
+![Project Structure](screenshots/project-structure.png)
+
+### 4. TestNG Execution Report
+
+![TestNG Report](screenshots/testng-report.png)
